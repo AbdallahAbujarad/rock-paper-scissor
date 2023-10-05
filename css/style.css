@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D2E0FB;
+}
+
+.container {
+    height: 90vh;
+    width: 80vw;
+    background-color: #F9F3CC;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .text-result {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    min-width: 100px;
+    min-height: 30px;
+    border-radius: 20px;
+    background-color: #D2E0FB;
+    position: absolute;
+    top: 0;
+    padding-top: 35px;
+}
+
+.container .game {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container .game .side {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .game .side h1 {
+    text-align: center;
+    margin-top: auto;
+}
+
+.container .game .side {
+    height: 90%;
+}
+
+.container .game .person .choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.container .game .person .choices .choice {
+    border-radius: 5px;
+    background: none;
+    border: none;
+    height: 25%;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .game .person .choices .choice:hover {
+    height: 30%;
+}
+
+.container .game .person .choices .choice .choice-img {
+    height: 100%;
+}
+
+.container .game .person .player-turn {
+    display: none;
+}
+
+.container .game .person .player-turn img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .game .result {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    align-self: center;
+    text-align: center;
+}
+
+.container .game .result .res-side {
+    width: 45%;
+    border: black solid 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .game .result .res-side h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.container .game .result .player {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container .game .result .computer {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .game .computer .computer-turn {
+    align-self: center;
+    translate: 0 70%;
+    height: 33%;
+}
+
+.container .game .computer .computer-turn img {
+    height: 100%;
+}
+
+.container .buttons button {
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    background-size: 200%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s;
+}
+
+.container .buttons button:hover {
+    background-position: 110%;
+}
+
+.container .buttons .play {
+    background-image: linear-gradient(80deg, rgb(0, 0, 0) 0 50%, green 50% 100%);
+    background-color: green;
+}
+
+.container .buttons .reset {
+    background-image: linear-gradient(80deg, rgb(0, 0, 0) 0 50%, red 50% 100%);
+    background-color: red;
+}
